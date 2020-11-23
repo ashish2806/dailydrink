@@ -3,14 +3,7 @@ import React, { useState } from "react";
 import OrderForm from "./components/OrderForm";
 import OrderList from "./components/OrderList";
 function App() {
-  const orderData = [
-    {
-      id: 1,
-      name: "ashish",
-      price: 50,
-      description: "surat"
-    }
-  ];
+  const orderData = [];
 
   const [order, setOrder] = useState(orderData);
   const [updateData, setUpdateData] = useState([]);
@@ -48,12 +41,16 @@ function App() {
   };
   return (
     <div className="App">
+      <div className="App_Container">
       <OrderForm HandleOrder={HandleOrder} updateData={updateData} />
+      </div>
+      <div className="App_Container">
       <OrderList
         order={order}
         editHanlder={editHanlder}
         deleteHanlder={deleteHanlder}
       />
+      </div>
     </div>
   );
 }

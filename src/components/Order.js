@@ -1,20 +1,16 @@
-import React from 'react'
+import React from "react";
+import "./Order.css";
+function Order({ order, editHanlder, deleteHanlder }) {
+  return (
+    <tr>
+    <td>{order.name}</td>
+    <td>{order.price}</td>
+    <td>{order.description}</td>
+    <td> <button onClick={editHanlder}type="button">Edit</button></td>
+    <td><button onClick={deleteHanlder} type="button">Delete</button></td>
 
-function Order({order,editHanlder,deleteHanlder}) {
-    
-    return (
-        <div style={{display:'flex',alignItems: "center"}}>
-          <ul>
-              <li>{order.name}</li>
-              <li>{order.price}</li>
-              <li>{order.description}</li>
-          </ul>
-          <div style={{margin:20    }}>
-              <button onClick={editHanlder}type="button">Edit</button>
-              <button onClick={deleteHanlder} style={{marginLeft:10}} type="button">Delete</button>
-          </div>
-        </div>
-    )
+</tr>
+  );
 }
 
-export default Order
+export default Order;

@@ -1,14 +1,44 @@
-.form__textarea , input[type=text] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
 
 
- 
+    div.container {
+        border-radius: 5px;
+        background-color: #2c3e5003;
+        padding: 20px;
+        margin-right: 50px;
+    }
 
-  .container{
-      align-items: center;
-      background-color: gray;
-  }
+    div.container {
+        text-align: left;
+    }
+
+    .order-form-group label {
+        float: left;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .order-form-group input, select, textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .order-form-group input[type=submit] {
+        width: 30%;
+        background-color: #af954c;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .order-form-group input[type=submit]:hover {
+        background-color: #ab7f04;
+    }
+
