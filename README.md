@@ -2,14 +2,20 @@
 
 https://github.com/ashish2806/dailydrink
 
-clone or download 
+## clone or download 
+
+git clone https://github.com/ashish2806/dailydrink.git
+
 
 ##  go to directory 
 
+cd dailydrink/
+
 ## run npm install
+npm install
 
 ## run npm start 
-
+npm start 
 
 ## home page can see both Order form(left) and list(right)
 
